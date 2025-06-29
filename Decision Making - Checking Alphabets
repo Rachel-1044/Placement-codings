@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char al=sc.next().charAt(0);
+        if (al=='a'|| al=='A'||al=='e'||al=='E'||al=='i'||al=='I'||al=='O'||al=='o'||al=='u'||al=='U'){
+            System.out.println("Vowel");
+        }
+        else if((al >='A' && al <='Z') || (al >='a' && al <= 'z')){
+            System.out.println("Consonant");
+        }
+        else{
+            System.out.println("Not an alphabet");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
