@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        double distance =Math.sqrt((x - 3) * (x - 3) + (y - 4) * (y - 4));
+        System.out.print((int)distance);
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
