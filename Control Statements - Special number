@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+         for (int i = m; i <= n; i++) {
+            int tens = i / 10;       
+            int ones = i % 10;
+            int sum = tens + ones;
+            int product = tens * ones;
+            if (sum + product == i) {
+                System.out.println(i);
+            }
+        }
+
+        sc.close();
+       
+    }
+}
