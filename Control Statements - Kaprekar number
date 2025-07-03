@@ -1,0 +1,22 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int k = sc.nextInt();
+        int sq = k * k;
+        boolean isKaprekar = false;
+        for (int d = 1; d < sq; d *= 10) {
+            int left = sq / d;
+            int right = sq % d;
+            if (right > 0 && left + right == k) {
+                isKaprekar = true;
+                break;
+            }
+        }
+        if (k == 1 || isKaprekar) {
+            System.out.println("Kaprekar Number");
+        } else {
+            System.out.println("Not a Kaprekar Number");
+        }
+    }
+}
